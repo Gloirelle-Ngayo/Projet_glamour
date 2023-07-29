@@ -29,6 +29,16 @@
           text-align: justify;
           line-height: 30px;
         }
+        @media (max-width: 990px) {
+          .card{
+            margin: 10px;
+          }
+          .card img{
+            max-width : 100%;
+            heigth: auto;
+            display: block
+          }
+      }
     </style>
 </head>
 <body>
@@ -74,7 +84,7 @@
       </div>
       <div class="carousel-inner mb-5">
         <div class="carousel-item active">
-          <img src="<?= base_url().'assets/img/images2.jpg'?>" class="d-block w-100" style="height: 500px;" alt="image1">
+          <img src="<?= base_url().'assets/img/images2.jpg'?>" class="d-block w-100 img-fluid" style="height: 500px;" alt="image1">
           <div class="carousel-caption d-md-block text-start pb-5">
             <h3 class="animate__animated animate__fadeInDown fs-1">Bienvenu sur Glamour</h3>
             <p class="animate__animated animate__fadeInRight animate__delay-2s fs-5">Vous y trouverez les paroles de motivations sur de vie, l'amour, le travail et la formation...</p>
@@ -82,7 +92,7 @@
           </div>
         </div>
         <div class="carousel-item">
-          <img src="<?= base_url().'assets/img/images.jpg'?>" class="d-block w-100" style="height: 500px;" alt="image2">
+          <img src="<?= base_url().'assets/img/images.jpg'?>" class="d-block w-100 img-fluid" style="height: 500px;" alt="image2">
           <div class="carousel-caption d-md-block text-center pb-5">
             <h3 class="animate__animated animate__fadeInDown fs-1 pb-3">Bienvenu sur Glamour</h3>
             <p class="animate__animated animate__fadeInRight animate__delay-2s fs-5 pb-3">Vous y trouverez les poèmes sur la vie, l'amour, le travail et la formation...</p>
@@ -90,10 +100,10 @@
           </div>
         </div>
         <div class="carousel-item">
-          <img src="<?= base_url().'assets/img/images3.jpg'?>" class="d-block w-100" style="height: 500px;" alt="image3">
+          <img src="<?= base_url().'assets/img/images3.jpg'?>" class="d-block w-100 img-fluid" style="height: 500px;" alt="image3">
           <div class="carousel-caption d-md-block text-end pb-5">
             <h3 class="animate__animated animate__fadeInDown fs-1 pb-3">Bienvenu sur Glamour</h3>
-            <p class="animate__animated animate__fadeInRight animate__delay-2s fs-5 pb-3">Vous y trouverez les citations sur de vie, l'amour, le travail et la formation...</p>
+            <p class="animate__animated animate__fadeInRight animate__delay-2s fs-5 pb-3">Vous y trouverez les citations sur la vie, l'amour, le travail et la formation...</p>
             <button class="btn btn-primary animate__animated animate__fadeInUp animate__delay-3s fs-5">Pour votre plaisir</button>
           </div>
         </div>
@@ -107,10 +117,10 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-      <section class="section2 d-flex">
-        <div class="carte1">
+      <section class="section2 d-flex row">
+        <div class="carte1 col-lg-4 col-md-6">
             <div class="card">
-                <img src="<?= base_url().'assets/img/motivation.jpg'?>" style="height: 170px; width: 10rem;" class="card-img-top rounded-circle" alt="image motivation">
+                <img src="<?= base_url().'assets/img/motivation.jpg'?>" style="height: 170px; width: 50%;" class="card-img-top rounded-circle" alt="image motivation">
               <div class="card-body">
                 <h5 class="card-title text-center">Motivations</h5>
                 <p class="card-text">Attitudes à avoir pendant les rudes moments de la vie. Pendant que vous traversez les routes les plus inhospitalières de la vie Souvenez vous de...</p>
@@ -118,9 +128,9 @@
               </div>
             </div>
         </div>
-        <div class="carte2">
-            <div class="card me-4 ms-4">
-                <img src="<?= base_url().'assets/img/citation.jpg'?>" style="height: 170px; width: 10rem; text-center" class="card-img-top rounded-circle" alt="image citations">
+        <div class="carte2 col-lg-4 col-md-6">
+            <div class="card">
+                <img src="<?= base_url().'assets/img/citation.jpg'?>" style="height: 170px; width: 50%; text-center" class="card-img-top rounded-circle" alt="image citations">
               <div class="card-body">
                 <h5 class="card-title text-center">Citations</h5>
                 <p class="card-text">C'est pour nous donner une certaine reflexion sur les choses que nous traversons dans la vie quotidienne et nous faire acquerir une experience de vie...</p>
@@ -128,9 +138,9 @@
               </div>
             </div>
         </div>
-        <div class="carte3">
+        <div class="carte3 col-lg-4 col-md-6">
             <div class="card">
-                <img src="<?= base_url().'assets/img/proverbe.jpeg'?>" style="height: 170px; width: 10rem;" class="card-img-top rounded-circle" alt="image proverbes">
+                <img src="<?= base_url().'assets/img/proverbe.jpeg'?>" style="height: 170px; width: 50%;" class="card-img-top rounded-circle" alt="image proverbes">
               <div class="card-body">
                 <h5 class="card-title text-center">Proverbes</h5>
                 <p class="card-text">Aussi longtemps que tu es en vie tu n'apprecies pas cette chose de merveilleuse, demande à une personne malade la chance que tu as...</p>
