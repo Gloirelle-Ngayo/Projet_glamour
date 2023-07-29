@@ -143,7 +143,7 @@
                 <img src="<?= base_url().'assets/img/proverbe.jpeg'?>" style="height: 170px; width: 50%;" class="card-img-top rounded-circle" alt="image proverbes">
               <div class="card-body">
                 <h5 class="card-title text-center">Proverbes</h5>
-                <p class="card-text">Aussi longtemps que tu es en vie tu n'apprecies pas cette chose de merveilleuse, demande à une personne malade la chance que tu as...</p>
+                <p class="card-text">Aussi longtemps que vous êtes en vie, vous n'appriécez pas cette chose de merveilleuse, demande à une personne malade la chance que tu as...</p>
                 <a href="<?= base_url().'Proverbes'?>" class="btn btn-secondary">Voir la page >></a>
               </div>
             </div>
