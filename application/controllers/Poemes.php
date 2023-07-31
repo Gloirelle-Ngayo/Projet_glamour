@@ -10,7 +10,9 @@
          
         public function index() {
             $data['affiche'] = $this->poemes_model->get_data();
+            $this->load->view('templates/header');
             $this->load->view('poemes',$data); // chargement de la vue poemes
+            $this->load->view('templates/footer');
         }
         public function ajoutPoeme(){ //chargement de la vue ajout poemes
             $this->load->view('ajoutPoeme');

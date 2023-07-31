@@ -1,0 +1,29 @@
+body{
+    background-color: #d1dfe3;
+  }
+  #Acceuil .card{
+    border: 1px solid #dee2e6;
+    background-color: #d1dfe3;
+  }
+  #Acceuil .card img{
+    position: relative;
+    left: 97px;
+  }
+  #Acceuil .card-title{
+    font-size: 30px;
+    color:#5a5a5a;
+  }
+  #Acceuil .card p{
+    text-align: justify;
+    line-height: 30px;
+  }
+  @media (max-width: 990px) {
+    #Acceuil .card{
+      margin: 10px;
+    }
+    #Acceuil .card img{
+      max-width : 100%;
+      heigth: auto;
+      display: block
+    }
+}

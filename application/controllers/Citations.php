@@ -9,7 +9,9 @@
          
         public function index() { // chargement de la vue citations
             $tab['affiche'] = $this->Citations_model->get_data();
+            $this->load->view("templates/header");
             $this->load->view('citations',$tab);
+            $this->load->view("templates/footer");
         }
         public function ajoutCit(){ // chargement de la vue qui gere l'ajout des citations
             $this->load->view('AjoutCit');

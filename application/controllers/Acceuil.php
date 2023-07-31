@@ -5,7 +5,8 @@
          
         public function index() {
             $this->load->view('acceuil');
+            $this->load->view('templates/footer');
+
         }
     }
-
 ?>

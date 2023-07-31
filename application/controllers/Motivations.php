@@ -9,7 +9,9 @@
          
         public function index() { // chargement de la vue motivations
             $tab['affiche'] = $this->Motivations_model->get_data();
+            $this->load->view('templates/header');
             $this->load->view('motivations',$tab);
+            $this->load->view('templates/footer');
         }
         public function ajoutMotiv() { // chargement de la vue qui gere l'ajout des motivations
             $this->load->view('ajoutMotiv');

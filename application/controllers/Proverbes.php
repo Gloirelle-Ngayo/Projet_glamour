@@ -9,7 +9,9 @@
          
         public function index() { // chargement de la vue proverbes
             $tab['affiche'] = $this->Proverbes_model->get_data();
+            $this->load->view('templates/header');
             $this->load->view('proverbes',$tab);
+            $this->load->view('templates/footer');
         }
            
         public function ajoutpro() { // chargement de la vue qui gere l'ajout des proverbes

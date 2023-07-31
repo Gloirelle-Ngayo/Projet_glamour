@@ -9,51 +9,19 @@
     <link rel="stylesheet" href="<?= base_url().'assets/css/animate.min.css'?>">
     <link rel="stylesheet" href="<?= base_url().'assets/fontawesome-free-5.15.3-web/fontawesome-free-5.15.3-web/css/all.min.css'?>">
     <title>Acceuil</title>
-    <style>
-        body{
-          background-color: #d1dfe3;
-        }
-        .card{
-          border: 1px solid #dee2e6;
-          background-color: #d1dfe3;
-        }
-        .card img{
-          position: relative;
-          left: 97px;
-        }
-        .card-title{
-          font-size: 30px;
-          color:#5a5a5a;
-        }
-        .card p{
-          text-align: justify;
-          line-height: 30px;
-        }
-        @media (max-width: 990px) {
-          .card{
-            margin: 10px;
-          }
-          .card img{
-            max-width : 100%;
-            heigth: auto;
-            display: block
-          }
-      }
-    </style>
 </head>
 <body>
-
-
   <nav class="navbar navbar-expand-lg bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand text-light" href="#"><i class="fab fa-accusoft"></i>Glamour</a>
-      <button class="navbar-toggler border border-1 border-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="fas fa-bars text-light"></span>
       </button>
+
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active text-light" aria-current="page" href="<?= base_url().'Acceuil'?>"> <i class="fas fa-home"></i>Acceuil</a>
+            <a class="nav-link text-light active" aria-current="page" href="<?= base_url().'Acceuil'?>"> <i class="fas fa-home"></i>Acceuil</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-light" href="<?= base_url().'Citations'?>"> <i class="fas fa-book-reader"></i> Citations</a>
@@ -75,7 +43,7 @@
     </div>
   </nav>
     
-    <section class="container">
+    <section class="container" id="Acceuil">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -150,12 +118,3 @@
         </div>
       </section>
     </section>
-
-    <footer class="footer container">
-        <p class="p-3 mb-5 mt-4" > &copy; <?= date('Y')?> <span class="text-primary">My News</span> glamour, all right reserved </p>
-    </footer>
-    <script src=" <?= base_url().'assets/js/bootstrap.bundle.min.js' ?>"></script>
-    <script src=" <?= base_url().'assets/js/script.js' ?>"></script>
-    <script src="<?= base_url().'assets/js/jquery.min.js' ?>"></script>
-</body>
-</html>
