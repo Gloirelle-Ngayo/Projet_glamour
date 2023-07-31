@@ -6,10 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="<?= base_url().'assets/css/bootstrap.min.css'?>">
     <link rel="stylesheet" href="<?= base_url().'assets/css/style.css'?>">
-    <link rel="stylesheet" href="<?= base_url().'assets/css/animate.min.css'?>">
+    <link rel="stylesheet" href="<?= base_url().'assets/aos-master/dist/aos.css'?>">
     <link rel="stylesheet" href="<?= base_url().'assets/fontawesome-free-5.15.3-web/fontawesome-free-5.15.3-web/css/all.min.css'?>">
     <title>Acceuil</title>
 </head>
+    <style>
+       @media (max-width: 768px) {
+        .carte1{
+          padding-bottom: 200px;
+          font-size: 13px;
+        }
+    }
+    @media (max-width: 1200px) {
+      #navbarSupportedContent{
+          text-align: center;
+        }
+      }
+    @media (max-width: 450px) {
+        .carte1{
+          padding-bottom: 200px !important;
+          margin-bottom: 45px; 
+        }
+        .card .col-md-8{
+          font-size: 13px;
+          padding: 0px !important;
+        }
+    }
+    </style>
 <body>
   <nav class="navbar navbar-expand-lg bg-dark">
     <div class="container-fluid">

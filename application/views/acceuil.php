@@ -18,7 +18,7 @@
           <span class="fas fa-bars text-light"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link text-light active" aria-current="page" href="<?= base_url().'Acceuil'?>"> <i class="fas fa-home"></i>Acceuil</a>

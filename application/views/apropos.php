@@ -27,6 +27,31 @@
         #carteOld .card-title{
           color: #0dcaf0;
         }
+        .card .col-md-8{
+          font-size: 13px;
+          padding: 0px !important;
+        }
+        
+        @media (max-width: 768px) {
+        .carte1{
+          padding-bottom: 200px;
+          margin-bottom: 50px; 
+        }
+        .card .col-md-8{
+          font-size: 13px;
+          padding: 0px !important;
+        }
+    }
+    @media (max-width: 450px) {
+      .carte1{
+          padding-bottom: 300px !important;
+          margin-bottom: 40px; 
+        }
+        .card .col-md-8{
+          font-size: 12px;
+          padding: 0px !important;
+        }
+    }
     </style>
 <body>
 
@@ -35,9 +60,9 @@
   <div class="container-fluid">
     <a class="navbar-brand text-light" href="#"><i class="fab fa-accusoft"></i>Glamour</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      <span class="fas fa-bars text-light"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
             <a class="nav-link active text-light" aria-current="page" href="<?= base_url().'Acceuil'?>"> <i class="fas fa-home"></i>Acceuil</a>
@@ -82,7 +107,7 @@
           </div>
         </div>
       </div>
-      <div class="carte1" data-aos="fade-up">
+      <div class="carte1" data-aos="fade-up" id='Espacement'>
         <div class="card m-5" style="max-width: 1000px; border: none !important">
           <div class="row g-0 border-none" style="height:250px;">
             <div class="col-md-4 h-100">
@@ -91,7 +116,7 @@
             <div class="col-md-8">
               <div class="card-body">
                 <h5 class="card-title">Dieuveille Baudry Loïc NTSAKALAS</h5>
-                <p class="card-text">Je suis un homme à caractère respectueux, observable, pensif, rigoureux, romantique, etc. J'aime la placidité car c'est l'ombre de ma personne. Bien que selon ce que l'on écrit en amour paraît comme chimérique. Me concernant, j'ai été inspiré par plusieurs phénomènes de la vie courante(et amoureuse). Pour moi en tant que homme, je dirai que les hommes sérieux existent. Bien que très rares, je fais partie de ces hommes sincères bel et bien que nul n'est parfait.</p>
+                <p class="card-text">Je suis un homme à caractère respectueux, observable, pensif, rigoureux, romantique, etc. J'aime la placidité car c'est l'ombre de ma personne. Bien que selon ce que l'on écrit en amour paraît comme chimérique. Me concernant, j'ai été inspiré par plusieurs phénomènes de la vie courante(et amoureuse). Pour moi en tant que homme, je dirai que les hommes sérieux existent. </p>
                 <p class="card-text"><small class="text-muted">Responsable du contenu du site</small></p>
               </div>
             </div>
