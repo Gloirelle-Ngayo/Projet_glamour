@@ -14,16 +14,19 @@
             $this->load->view("templates/footer");
         }
         public function ajoutCit(){ // chargement de la vue qui gere l'ajout des citations
+            $this->load->view("templates/headerAdm");
             $this->load->view('AjoutCit');
         }
 
         public function modifCitations(){ // chargement de la vue qui gere la modification des citations
             $tab['affiche'] = $this->Citations_model->get_data();
+            $this->load->view("templates/headerAdm");
             $this->load->view('modifCita',$tab);
             
         }
         public function supCit() { // chargement de la vue qui gere la supression des citations
             $data['affiche'] = $this->Citations_model->get_data();
+            $this->load->view("templates/headerAdm");
             $this->load->view('DeleteCit',$data);
         }
         
@@ -112,6 +115,7 @@ public function recuperer(){ // reccuperation des données de la BDD à partir d
 
 public function modification($id){ //recuperation de la ligne concernée
     $data['affiche'] = $this->Citations_model->recu_ligne_modif($id);
+    $this->load->view("templates/headerAdm");
     $this->load->view('modifLigneCit',$data);
 }
 public function delete($id){

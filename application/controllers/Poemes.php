@@ -15,15 +15,18 @@
             $this->load->view('templates/footer');
         }
         public function ajoutPoeme(){ //chargement de la vue ajout poemes
+            $this->load->view("templates/headerAdm");
             $this->load->view('ajoutPoeme');
         }
 
         public function modifPoemes(){ // chargement de la vue qui gere la modification des poemes
             $tab['affiche'] = $this->poemes_model->get_data();
+            $this->load->view("templates/headerAdm");
             $this->load->view('modifPoeme',$tab);
         }
         public function supPoeme() { // chargement de la vue qui gere la supression des citations
             $data['affiche'] = $this->poemes_model->get_data();
+            $this->load->view("templates/headerAdm");
             $this->load->view('DeletePoeme',$data);
         }
         
@@ -112,6 +115,7 @@
    }
    public function modification($id){
     $data['affiche'] = $this->poemes_model->recu_ligne_modif($id);
+    $this->load->view("templates/headerAdm");
     $this->load->view('modifLignePoe',$data);
     }
 

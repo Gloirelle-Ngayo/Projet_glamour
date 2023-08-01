@@ -11,10 +11,20 @@
     <link rel="stylesheet" href="<?= base_url().'assets/css/carousel.css'?>">
     <link rel="stylesheet" href="<?= base_url().'assets/fontawesome-free-5.15.3-web/fontawesome-free-5.15.3-web/css/all.min.css'?>">
 </head>
+<style>
+    @media (min-width: 996px) {
+      form{
+        width: 30% !important;
+        position: relative;
+        left: 35%;
+        }
+      }
+
+    </style>
 <body id="body">
-    <main class="container w-25" id ='section1'>
+    <main class="container" id ='section1'>
         <div >
-            <form action="<?= base_url().'Login/validation' ?>" method="post" id="form" class="p-4">
+            <form action="<?= base_url().'Login/validation' ?>" method="post" id="form" class="p-4 row">
         <div data-aos="fade-down"   data-aos-easing="linear" data-aos-duration="1500">
                     
             <div id='logo' class="text-center mt-4">
@@ -30,14 +40,14 @@
                 }
             ?>
 
-            <div class="input-group flex-nowrap mb-3">
+            <div class="input-group flex-nowrap mb-3 col-md-6">
                 <span class="input-group-text fas fa-user" id="email"></span>
                 <input type="email" class="form-control" value="<?php echo set_value('email'); ?>" placeholder="Email" aria-label="email" aria-describedby="email" name='email'>
 
             </div>
             <p class='text-danger'><?php echo form_error('email'); ?></p>
 
-            <div class="input-group flex-nowrap mb-3">
+            <div class="input-group flex-nowrap mb-3 col-md-6">
                 <span class="input-group-text fas fa-lock" id="password"></span>
                 <input type="password" class="form-control" value="<?php echo set_value('email'); ?>" placeholder="Mot de passe" aria-label="password" aria-describedby="password" name='password'>
             </div>

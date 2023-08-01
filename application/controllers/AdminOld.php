@@ -1,6 +1,5 @@
 <?php
     defined('BASEPATH') OR exit('No direct script access allowed');
-
         class AdminOld extends CI_Controller{
             
             public function __construct(){
@@ -9,10 +8,12 @@
             }
             public function ajoutAdmin(){ // chargement de la vue qui gere l'ajout des Administrateur
                 $data['afficheAdmin'] = $this->admin_model->get_data();
+                $this->load->view("templates/headerAdm");
                 $this->load->view('ajoutAdmin',$data);
             }
             public function supAdmin() { // chargement de la vue qui gere la supression des Admins
                 $data['afficheAdmin'] = $this->admin_model->get_data();
+                $this->load->view("templates/headerAdm");
                 $this->load->view('supAdmin',$data);
             }
             public function validation(){ // code de validation des regles du formulaire

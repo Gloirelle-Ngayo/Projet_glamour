@@ -14,15 +14,18 @@
             $this->load->view('templates/footer');
         }
         public function ajoutMotiv() { // chargement de la vue qui gere l'ajout des motivations
+            $this->load->view("templates/headerAdm");
             $this->load->view('ajoutMotiv');
         }
         public function modifMotivations(){ // chargement de la vue qui gere la modification des motivations
             $tab['affiche'] = $this->Motivations_model->get_data();
+            $this->load->view("templates/headerAdm");
             $this->load->view('modifmotivations',$tab);
         }
 
         public function supMotiv() { // chargement de la vue qui gere la supression des citations
             $data['affiche'] = $this->Motivations_model->get_data();
+            $this->load->view("templates/headerAdm");
             $this->load->view('DeleteMot',$data);
         }
         
@@ -112,6 +115,7 @@
 
     public function modification($id){ // recuperation de la ligne concernée
         $data['affiche'] = $this->Motivations_model->recu_ligne_modif($id);
+        $this->load->view("templates/headerAdm");
         $this->load->view('modifLigneMot',$data);
     }
 

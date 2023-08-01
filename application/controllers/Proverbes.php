@@ -15,15 +15,18 @@
         }
            
         public function ajoutpro() { // chargement de la vue qui gere l'ajout des proverbes
+            $this->load->view("templates/headerAdm");
             $this->load->view('ajoutpro');
         }
         public function supProv() { // chargement de la vue qui gere la supression des proverbes
             $data['affiche'] = $this->Proverbes_model->get_data();
+            $this->load->view("templates/headerAdm");
             $this->load->view('DeleteProv',$data);
         }
 
         public function modifProverbes(){ // chargement de la vue qui gere la modification des proverbes
             $tab['affiche'] = $this->Proverbes_model->get_data();
+            $this->load->view("templates/headerAdm");
             $this->load->view('modifProv',$tab);
         }
         
@@ -113,6 +116,7 @@
 
     public function modification($id){ //modification de la ligne concernée 
         $data['affiche'] = $this->Proverbes_model->recu_ligne_modif($id);
+        $this->load->view("templates/headerAdm");
         $this->load->view('modifLigneProv',$data);
     }
     
