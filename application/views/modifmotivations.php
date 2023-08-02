@@ -3,7 +3,7 @@
           <div>
             <h3 class='border border-1 border-#dee2e6 p-3 bg-light'>modification des motivations</h3>
           </div>
-            <div class="table-reponsive">
+            <div class="table-responsive">
             <table class="table">
               <style>
                 table{
