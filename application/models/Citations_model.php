@@ -24,6 +24,5 @@
           $this->db->delete('Citations',array('id'=> $id));
       }
 
-      
     }
 ?>

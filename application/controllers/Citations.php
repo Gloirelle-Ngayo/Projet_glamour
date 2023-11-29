@@ -52,7 +52,7 @@
             $this->load->library('upload', $config); //chargement de la librairie upload qui permet le telechargement
             if (! $this->upload->do_upload('image')) //cas ou le telechargement de l'image n'a pas aboutit
             {
-                # code...
+                # code..
                 $imageError  =  array('image'=>$this->upload->display_errors());
             } else {
                 # code...
@@ -110,7 +110,9 @@
 }
 public function recuperer(){ // reccuperation des données de la BDD à partir d'une métohde du model et affiche des données dans une vu
     $data['affiche'] = $this->Citations_model->get_data();
+    $this->load->view("templates/header");
      $this->load->view('citations',$data);
+     $this->load->view("templates/footer");
 }
 
 public function modification($id){ //recuperation de la ligne concernée
@@ -122,8 +124,6 @@ public function delete($id){
     $this->Citations_model->suppression($id);
     redirect('Citations/recuperer');
 }
-
-
 
 }
 
