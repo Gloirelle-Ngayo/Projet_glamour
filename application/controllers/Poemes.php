@@ -111,7 +111,9 @@
     }
     public function recuperer(){ // reccuperation des données de la BDD à partir d'une métohde du model et affiche des données dans une vu
         $data['affiche'] = $this->poemes_model->get_data();
-         $this->load->view('poemes',$data);
+        $this->load->view('templates/header');
+        $this->load->view('poemes',$data);
+        $this->load->view('templates/footer');
    }
    public function modification($id){
     $data['affiche'] = $this->poemes_model->recu_ligne_modif($id);

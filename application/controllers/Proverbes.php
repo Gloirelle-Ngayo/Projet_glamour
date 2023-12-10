@@ -111,7 +111,9 @@
     }
     public function recuperer(){ // reccuperation des données de la BDD à partir d'une métohde du model et affiche des données dans une vu
         $data['affiche'] = $this->Proverbes_model->get_data();
+        $this->load->view('templates/header');
          $this->load->view('proverbes',$data);
+         $this->load->view('templates/footer');
     }
 
     public function modification($id){ //modification de la ligne concernée 

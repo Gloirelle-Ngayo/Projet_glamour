@@ -110,7 +110,9 @@
     }
     public function recuperer(){ // reccuperation des données de la BDD à partir d'une métohde du model et affiche des données dans une vu
         $data['affiche'] = $this->Motivations_model->get_data();
+        $this->load->view('templates/header');
          $this->load->view('motivations',$data);
+         $this->load->view('templates/footer');
     }
 
     public function modification($id){ // recuperation de la ligne concernée
